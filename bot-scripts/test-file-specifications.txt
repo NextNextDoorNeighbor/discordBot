@@ -1,0 +1,8 @@
+A valid test file consists of lines for the bot_tester to print, followed by the expected response from the bot. A * can be used as a wildcard character.
+For example:
+...
+Hello YourBot
+Hello BotTester
+What is the weather like?
+Currently it is 42 degrees
+...
