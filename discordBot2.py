@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import bitcoin as f1
 import random
 import requests
@@ -5,7 +6,7 @@ import asyncio
 import json
 from discord import Game
 from discord.ext.commands import Bot
-
+import goslate
 
 BOT_PREFIX = ('//')
 TOKEN = 'NTAyMTYxOTQzOTQ4NDI3MjY0.DqkAzA.BO4zAvuN-E0OAAzV8B8vstUyD94'
@@ -61,13 +62,35 @@ async def weather(zipcode):
     await client.say("Current weather in your area: \n Temperature: " + str(valTempF)+' F \n Forecast: '+ str(valDescr)+ '\n Wind Speed: ' + str(valWindSpeed)+ 'mph')
 
 
+
+
+
+'''Google translate
+language code must be ISO-639-1 language code 
+'''
+
+@client.command(description='Tranalte text given into a different language',
+                aliases=['Translate', 't', 'T', 'Goslate'])
+async def Gtranslate(message):
+    temp = message.content
+    gs = goslate.Goslate()
+    translatedText = gs.translate(temp,'es')
+
+    await client.say("Transalted Text: " + translatedText)
+
+
+
 async def listServers():
     await client.wait_until_ready()
     while not client.is_closed:
         print("Current Servers: ")
         for server in client.servers:
             print(server.name)
+        print("\n________________\n\n ")
         await asyncio.sleep(6000)
+
+   
+
 
 
 client.loop.create_task(listServers())
