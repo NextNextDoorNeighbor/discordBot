@@ -1,7 +1,7 @@
 # Work with Python 3.6
 import discord
 
-TOKEN = #...#
+TOKEN = 'NTAxNDMwODAzOTgxNjY0MjY3.DqZWcw.T7C9fs-a7xtNdiXDNFwO9hEfMt0'
 
 client = discord.Client()
 
@@ -17,9 +17,10 @@ async def on_message(message):
     # we do not want the bot to reply to itself
     if message.author == client.user:
         return
-
+    #client.send_message(message.channel, message)
+    client.send_message(message.channel, message.content)
     if message.content.startswith('!hello'):
-        msg = 'Hello {0.author.mention}'.format(message)
+        msg = 'Hello {0.author.name}'.format(message)
         await client.send_message(message.channel, msg)
 
 
