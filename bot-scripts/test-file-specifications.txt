@@ -1,8 +1,26 @@
-A valid test file consists of lines for the bot_tester to print, followed by the expected response from the bot. A * can be used as a wildcard character.
-For example:
+1. Run the bot you are trying to test.
+
+2. Create a test file "your_test_file_name.txt" consisting of messages formatted as
+
+String for tester to say
+Expected response of bot being tested
+String for tester to say
+Expected response of bot being tested
 ...
-Hello YourBot
-Hello BotTester
-What is the weather like?
-Currently it is 42 degrees
 ...
+String for tester to say
+Expected response of bot being tested
+
+
+3. Create a file containing credentials "your_credentials_file_name.txt" for a test bot formatted as the following:
+"""
+Tester bot token
+bot username
+your_test_file_name.txt
+"""
+
+4. Run "python bot_tester.py name_of_credentials_file.txt"
+
+5. On the server these two bots are running, post a message saying "begin test"
+
+
