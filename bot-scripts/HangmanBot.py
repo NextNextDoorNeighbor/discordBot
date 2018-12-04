@@ -30,13 +30,14 @@ test = -1
 async def start_game():
     global current_game, answer, temparray, letters_guessed, correctletterscount, lives, textart, test, testcount
 
-    temparray = []
-    letters_guessed = []
-    correctletterscount = 0
-    lives = 5
-
     if current_game != 1:
+
         current_game = 1
+        temparray = []
+        letters_guessed = []
+        correctletterscount = 0
+        lives = 5
+
         if (test >= 0):
             answer = possible_words[test]
             test += 1
@@ -99,6 +100,8 @@ async def guess(guess):
            await client.say("You have " + str(lives) + " left!")
            await client.say(textart[5 - lives])
            await client.say("Letters that you have guessed already: " + " ".join(letters_guessed))
+    else:
+        await client.say("You have to start a game before you guess.")
 
 @client.command()
 async def testing():
