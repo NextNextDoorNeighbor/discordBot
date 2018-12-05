@@ -58,9 +58,13 @@ async def start_game():
 @client.command()
 async def stop_game():
     global current_game, answer
-    current_game = 0
-    answer = ''
-    await client.say("You scared? Let me know when you want to play again!")
+    if (current_game == 1):
+        current_game = 0
+        answer = ''
+        await client.change_presence(game=None, status=None)
+        await client.say("You scared? Let me know when you want to play again!")
+    else:
+        await client.say("You have to be in a game to be able to stop one.")
 
 
 @client.command()
@@ -89,6 +93,7 @@ async def guess(guess):
                 current_game = 0
             if correctletterscount == len(answer):
                 await client.say("Nevermind...wow...you managed to win. Cool")
+                await client.change_presence(game=None,status=None)
                 current_game = 0
        elif str.upper(guess) in letters_guessed:
            await client.say("You already tried that one...")
