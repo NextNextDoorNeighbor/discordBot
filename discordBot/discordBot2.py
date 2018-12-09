@@ -11,11 +11,12 @@ import goslate
 import praw
 
 BOT_PREFIX = ('!')
-TOKEN = 'NTAyMTYxOTQzOTQ4NDI3MjY0.DqkAzA.BO4zAvuN-E0OAAzV8B8vstUyD94'
+TOKEN = 'NTA1OTQzNDk2Mzc3NzYxODAz.Dra8tQ.jbfn-dBBmvRzdNmHnCk3dnjehRk'
 
 client = Bot(command_prefix=BOT_PREFIX)
 
 # specifies name that can be called instead of function name
+
 
 
 @client.command(name='8ball',
@@ -44,7 +45,7 @@ async def onReady():
 
 
 @client.command(description='Retreives teh current Bitcoin value',
-                aliases=['Bit', 'BC'])
+                aliases=['btc', 'Bit', 'BC'])
 async def bitcoin():
     await client.say("Bitcoin price is: $" + bitC.bitcoinVal())
 
@@ -52,7 +53,6 @@ async def bitcoin():
 @client.command(description='Retreives the current weather data via zipcode',
                 aliases=['Meteorologist', 'W'])
 async def weather(zipcode):
-
     await client.say(weath.curWeath(zipcode))
 
 
@@ -61,7 +61,7 @@ language code must be ISO-639-1 language code
 '''
 
 
-@client.command(description='Tranalte text given into a different language',
+@client.command(description='Translate text given into a different language',
                 aliases=['Translate', 't', 'T', 'Goslate'])
 async def translate(ISO, *text):
     mess = ' '.join(text)
@@ -81,7 +81,7 @@ textart = ["`Gallows\n   +----\n   |\n   |\n   |\n   |\n   |\n __|______\n`",
 
 current_game = 0  # Used to check if game is running
 # List of possible words, input them in caps
-possible_words = ['TEST', 'WORD', 'CAR', 'PLANE', 'HELLO', 'WORLD', 'DISCORD', 'FUN', 'COMPUTER']
+possible_words = ['PLANE']
 answer = ''
 temparray = []  # used for storring apended underscores
 guess = ''  # current guessed letter
