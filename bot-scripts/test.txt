@@ -1,0 +1,10 @@
+!8ball
+~8ball~<@506104194134966272>
+!square 3
+3 squared is 9
+!btc
+Bitcoin price is: $%
+!weather 49931
+Current weather in your area: & Temperature: % F & Forecast: {str}& Wind Speed: %mph
+!translate es hi
+Translated Text: Hola

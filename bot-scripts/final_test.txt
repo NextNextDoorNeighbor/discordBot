@@ -1,0 +1,60 @@
+!testing
+Testing mode on.
+!start_game
+Lets start! Your word is 7 letters long. You have 5 lives.&`Gallows&   +----&   |&   |&   |&   |&   |& __|______&`&- - - - - - -
+!stop_game
+You scared? Let me know when you want to play again!
+!start_game
+Lets start! Your word is 3 letters long. You have 5 lives.&`Gallows&   +----&   |&   |&   |&   |&   |& __|______&`&- - -
+!guess B
+B is in the answer. Keep guessing!&B - -&You have 5 left!&`Gallows&   +----&   |&   |&   |&   |&   |& __|______&`&Letters that you have guessed already: B
+!guess u
+u is in the answer. Keep guessing! B U -&You have 5 left!&`Gallows&   +----&   |&   |&   |&   |&   |& __|______&`&Letters that you have guessed already: B U
+!guess u g
+You already tried that one… You have 5 left!&`Gallows&   +----&   |&   |&   |&   |&   |& __|______&`&Letters that you have guessed already: B U
+!guess ug
+No cheating, only one letter at a time. You have 5 left!&`Gallows&   +----&   |&   |&   |&   |&   |& __|______&`&Letters that you have guessed already: B U
+!guess G
+G is in the answer. You have 5 left!&`Gallows&   +----&   |&   |&   |&   |&   |& __|______&`&Letters that you have guessed already: B U G Nevermind...wow...you managed to win. Cool
+!start_game
+Lets start! Your word is 7 letters long. You have 5 lives.&`Gallows&   +----&   |&   |&   |&   |&   |& __|______&`&- - - - - - -
+!start_game
+Sorry please finish or stop the previous game before starting a new one
+!guess W
+W is in the answer. Keep guessing!&W - - - - - -&You have 5 left!&`Gallows&   +----&   |&   |&   |&   |&   |& __|______&`&Letters that you have guessed already: W
+!guess Z
+Z isn't in the word, DUH!&W - - - - - -&You have 4 left!&`Rope&   +---+&   |   |&   |   +&   |&   |&   |& __|______`&Letters that you have guessed already: W Z
+!guess w
+You already tried that one…&You have 4 left!&`Rope&   +---+&   |   |&   |   +&   |&   |&   |& __|______`&Letters that you have guessed already: W Z
+!guess O
+O is in the answer. Keep guessing!&W O - - - - -&
+You have 4 left!&`Rope&   +---+&   |   |&   |   +&   |&   |&   |& __|______`&Letters that you have guessed already: W Z O
+!guess p
+p isn't in the word, DUH!&W O - - - - -&You have 3 left!&`Head &   +---+&   |   |&   |   O&   |&   |&   |& __|______`&Letters that you have guessed already: W Z O P
+!guess L
+l isn't in the word, DUH!&W O - - - - -&You have 2 left!&`Torso&   +---+&   |   |&   |   O&   |   |&   |   |&   |& __|______`&Letters that you have guessed already: W Z O P L
+!guess D
+d isn't in the word, DUH!&W O - - - - -&You have 1 left!&`Upper Body&   +---+&   |   |&   |   O&   |  /|\&   |   |&   |& __|______`&Letters that you have guessed already: W Z O P L D
+!guess e
+e isn't in the word, DUH!&W O - - - - -&You have 0 left!&`DEAD&   +---+&   |   |&   |   O&   |  /|\&   |   |&   |  / \& __|______`&Letters that you have guessed already: W Z O P L D E&Sorry, you're bad. You lose
+!guess r
+You have to start a game before you guess.
+!guess p
+p is in the answer. Keep guessing!&P - - - -&You have 5 left!&`Gallows&   +----&   |&   |&   |&   |&   |& __|______&`&Letters that you have guessed already: P
+!guess q
+q isn't in the word, DUH!&P - - - -&You have 4 left!&`Rope&   +---+&   |   |&   |   +&   |&   |&   |& __|______&`&Letters that you have guessed already: P Q
+!guess L
+L is in the answer. Keep guessing!&P L - - -&You have 4 left!&`Rope&   +---+&   |   |&   |   +&   |&   |&   |&   |& __|______&`&Letters that you have guessed already: P Q L
+!guess a
+a is in the answer. Keep guessing!&P L A - -&You have 4 left!&`Rope&   +---+&   |   |&   |   +&   |&   |&   |& __|______&`&Letters that you have guessed already: P Q L A
+
+!translate es hi
+Translated Text: Hola
+!8ball
+~8ball~ <@506104194134966272>
+!square 3
+3 squared is 9
+!btc
+Bitcoin price is: $%
+!weather 49931
+Current weather in your area: & Temperature: % F & Forecast: {s}& Wind Speed: %mph
